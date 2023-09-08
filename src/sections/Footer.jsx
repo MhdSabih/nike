@@ -1,3 +1,4 @@
+import { copyrightSign } from "../assets/icons";
 import { footerLogo } from "../assets/images";
 import { footerLinks, socialMedia } from "../constants";
 
@@ -20,16 +21,17 @@ const Footer = () => {
             Your perfect Size In Store. Get Rewards
           </p>
           <div className="flex items-center gap-5 mt-8">
-            {socialMedia.map((link) => (
+            {socialMedia.map((icon) => (
               <div
                 className="flex justify-center items-center w-12 h-12 bg-white rounded-full"
-                key={link.alt}
+                key={icon.alt}
               >
-                <img src={link.src} alt={link.alt} width={24} height={24} />
+                <img src={icon.src} alt={icon.alt} width={24} height={24} />
               </div>
             ))}
           </div>
         </div>
+
         <div className="flex flex-1 justify-between lg:gap-10 gap-20 flex-wrap">
           {footerLinks.map((section) => (
             <div key={section.title}>
@@ -42,7 +44,6 @@ const Footer = () => {
                     className="mt-3 font-montserrat text-base leading-normal text-white-400 hover:text-slate-gray"
                     key={link.name}
                   >
-                    {link.name}
                     <a href={link.link}>{link.name}</a>
                   </li>
                 ))}
@@ -50,6 +51,20 @@ const Footer = () => {
             </div>
           ))}
         </div>
+      </div>
+
+      <div className="flex justify-between text-white-400 mt-24 max-sm:flex-col max-sm:items-center">
+        <div className="flex flex-1 justify-start items-center gap-2 font-montserrat cursor-pointer">
+          <img
+            src={copyrightSign}
+            alt="copyright sign"
+            width={20}
+            height={20}
+            className="rounded-full m-0"
+          />
+          <p>Copyright. All rights reserved.</p>
+        </div>
+        <p className="font-montserrat cursor-pointer">Terms & Conditions</p>
       </div>
     </footer>
   );
