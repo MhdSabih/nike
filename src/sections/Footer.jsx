@@ -23,10 +23,12 @@ const Footer = () => {
           <div className="flex items-center gap-5 mt-8">
             {socialMedia.map((icon) => (
               <div
-                className="flex justify-center items-center w-12 h-12 bg-white rounded-full"
+                className="flex justify-center items-center w-12 h-12 bg-white cursor-pointer rounded-full"
                 key={icon.alt}
               >
-                <img src={icon.src} alt={icon.alt} width={24} height={24} />
+                <a href={icon.link} target="_blank" rel="noreferrer">
+                  <img src={icon.src} alt={icon.alt} width={24} height={24} />
+                </a>
               </div>
             ))}
           </div>
@@ -44,7 +46,7 @@ const Footer = () => {
                     className="mt-3 font-montserrat text-base leading-normal text-white-400 hover:text-slate-gray"
                     key={link.name}
                   >
-                    <a href={link.link}>{link.name}</a>
+                    <a href={link.link} target="_blank" rel="noreferrer">{link.name}</a>
                   </li>
                 ))}
               </ul>
@@ -64,7 +66,9 @@ const Footer = () => {
           />
           <p>Copyright. All rights reserved.</p>
         </div>
-        <p className="font-montserrat cursor-pointer">Terms & Conditions</p>
+        <p className="font-montserrat cursor-pointer">
+          Terms & Conditions <span className="text-coral-red">Mohd Sabih</span>
+        </p>
       </div>
     </footer>
   );

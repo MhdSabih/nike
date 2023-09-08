@@ -134,14 +134,16 @@ export const footerLinks = [
   {
     title: "Get in touch",
     links: [
-      { name: "customer@nike.com", link: "mailto:customer@nike.com" },
+      { name: "LinkedIn", link: "https://www.linkedin.com/in/mohammad-sabih-33207523b/" },
+      { name: "GitHub", link: "https://github.com/MhdSabih" },
+      { name: "mohdsabih.rehman@gmail.com", link: "mailto:mohdsabih.rehman@gmail.com" },
       { name: "+92554862354", link: "tel:+92554862354" },
     ],
   },
 ];
 
 export const socialMedia = [
-  { src: facebook, alt: "facebook logo" },
+  { src: facebook, alt: "facebook logo", link: "https://www.facebook.com/mohammad.sabih.100" },
   { src: twitter, alt: "twitter logo" },
-  { src: instagram, alt: "instagram logo" },
+  { src: instagram, alt: "instagram logo", link: "https://www.instagram.com/sabiihhhh/" },
 ];
