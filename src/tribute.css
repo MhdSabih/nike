@@ -1,0 +1,7 @@
+body {
+    background-color: #41c163;
+}
+.main-heading {
+    --tw-text-opacity: 1;
+    color: rgb(255 100 82 / var(--tw-text-opacity));
+}
