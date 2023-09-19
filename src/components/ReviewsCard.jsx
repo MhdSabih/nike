@@ -14,7 +14,7 @@ const ReviewCard = ({ imgURL, customerName, rating, feedback }) => {
           src={star}
           width={24}
           height={24}
-          alt='rating star'
+          alt='rating star preview'
           className='object-contain m-0'
         />
         <p className='text-xl font-montserrat text-slate-gray'>({rating})</p>
