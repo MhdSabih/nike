@@ -19,7 +19,7 @@ const Button = ({
       {iconURL && (
         <img
           src={iconURL}
-          alt="arrow right"
+          alt="arrow left"
           className="ml-2 rounded-full w-5 h-5"
         />
       )}
